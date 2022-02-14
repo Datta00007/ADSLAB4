@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+	<div class="container">
+		<br>
+		
+
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="card">
+					<header class="card-header">
+						<a href="login.html" class="float-right btn btn-outline-primary mt-1">Log in</a>
+						<h4 class="card-title mt-2">Sign up</h4>
+					</header>
+					<article class="card-body">
+						<form action="insert.php" method="POST">
+							<div class="form-row">
+								<div class="col form-group">
+									<label>Name </label>
+									<input type="text" class="form-control" name="name" placeholder="" required>
+								</div> <!-- form-group end.// -->
+								<div class="col form-group">
+									<label>PRN</label>
+									<input type="text" class="form-control" name="username" placeholder=" " required>
+								</div> <!-- form-group end.// -->
+							</div> <!-- form-row end.// -->
+							<div class="form-group">
+								<label>Branch</label>
+								<input type="text" class="form-control" name="branch" placeholder="" required>
+								
+							</div> <!-- form-group end.// -->
+							
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label>Batch</label>
+									<input type="text" name="batch" class="form-control" required>
+								</div> <!-- form-group end.// -->
+								<div class="form-group col-md-6">
+									<label>Year</label>
+									<select id="inputState" class="form-control" name="year" required>
+										<option value=""> Choose Year...</option>
+										<option value="First Year">First Year</option>
+										<option value="Second Year">Second Year</option>
+										<option value="Third Year">Third Year</option>
+										<option value="Final Year">Final Year</option>
+										
+									</select>
+								</div> <!-- form-group end.// -->
+							</div> <!-- form-row.// -->
+							<div class="form-group">
+								<label>Create password</label>
+								<input class="form-control" type="password" name="password" required>
+							</div> <!-- form-group end.// -->
+							<div class="form-group">
+								<button  class="btn btn-primary btn-block" type="submit" value="Submit" name="submit"> Register </button>
+							</div> <!-- form-group// -->
+							<small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our
+								<br> Terms of use and Privacy Policy.</small>
+						</form>
+					</article> <!-- card-body end .// -->
+					<div class="border-top card-body text-center">Have an account? <a href="">Log In</a></div>
+				</div> <!-- card.// -->
+			</div> <!-- col.//-->
+
+</body>
+
+</html>
